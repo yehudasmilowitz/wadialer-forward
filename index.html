@@ -18,13 +18,38 @@
     <link rel="icon" type="image/png" href="https://wadialer.com/favicon.png">
 
     <title>Whatsapp Dialer</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+
+        #countdown {
+            font-weight: bold;
+            font-size: 24px;
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
-    <p id="redirectText">Redirecting to WADialer.com in <span id="countdown">3</span>...</p>
+    <p id="redirectText">We are moving to our new domain: <a href="https://wadialer.com" target="_blank">WADialer.com</a>. Redirecting in <span id="countdown">4</span>...</p>
 
     <script>
         window.onload = function() {
-            var countdown = 3;
+            var countdown = 4;
 
             function updateCountdown() {
                 document.getElementById('countdown').innerHTML = countdown;
